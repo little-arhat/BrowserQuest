@@ -1,8 +1,11 @@
-node_modules
-client-build
-build.txt
-config_build.json
-config_local*
-client/audio/music
+node/node_modules
+node/client-build
+node/build.txt
+node/config_build.json
+node/config_local*
+node/lient/audio/music
 .DS_Store
 *.swp
+deps
+ebin
+logs

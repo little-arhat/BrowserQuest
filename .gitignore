@@ -8,4 +8,4 @@ node/lient/audio/music
 *.swp
 deps
 ebin
-logs
+log

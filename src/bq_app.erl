@@ -21,7 +21,7 @@ start(_StartType, _StartArgs) ->
                         [{directory, <<"node/shared">>},
                          {mimetypes, {fun mimetypes:path_to_mimes/2, default}}
                         ]},
-                       {'_', bq_proxy, [{upstream, "http://localhost:8001/"}]}
+                       {'_', bq_client, []}
                       ]}
                ],
 

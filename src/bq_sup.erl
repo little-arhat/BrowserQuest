@@ -24,5 +24,6 @@ start_link() ->
 %% ===================================================================
 
 init([]) ->
-    {ok, { {one_for_one, 5, 10}, []} }.
-
+    World = {bq_world, {bq_world, start_link, []},
+             permanent, 5000, worker, [bq_world]},
+    {ok, { {one_for_one, 5, 10}, [World]} }.
